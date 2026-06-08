@@ -52,6 +52,8 @@ header nav {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: #F7F7F7;
 }
@@ -66,17 +68,21 @@ nav>ul {
 }
 
 .boton-matricula {
-    display: flex;
+    display: flex;    
+}
+
+.boton-matricula a {
+    text-decoration: dashed;
+    color: aliceblue;
+    font-size: small;
+}
+
+.boton-matricula span {
     background-color: #FF6B35;
     border-radius: 8px;
     padding: 8px;
 }
 
-.boton-matricula a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: small;
-}
 
 .banner {
     display: flex;
@@ -218,7 +224,7 @@ footer p {
     font-size: .7em;
 }
 
-.hero-cards-section{
+.hero-cards-section {
     margin-top: 8px;
 }
 
@@ -255,17 +261,26 @@ footer p {
 #servicios {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     background-color: #F7F7F7;
-    margin: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 0 24px 24px;
+    padding: 24px;
+    flex: 1;
 }
 
 .servicios-texto {
     margin: 16px 24px;
 }
+
+.servicios-texto h2 {
+    font-size: 2em;
+}
+
+.servicios-texto p {
+    color: #666666;
+}
+
 
 .servicios-contenedor {
     display: flex;
@@ -278,7 +293,8 @@ footer p {
 .card {
     width: 280px;
     height: 200px;
-    background-color: #E8E8E8;
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -289,12 +305,12 @@ footer p {
 
 .card p {
     font-size: .8em;
+    margin: 2px 48px;
 }
 
-.card .icono{
+.card .icono {
     width: 48px;
     height: 48px;
-    background-color: #89b1b162;
     border: 1px solid #9e9e9e2f;
     border-radius: 16px;
     display: flex;
@@ -306,4 +322,36 @@ footer p {
     text-decoration: none;
     font-size: .8em;
     font-weight: bolder;
+}
+
+.color-icono-1 {
+    background-color: #E8F8F7;
+}
+
+.color-icono-2 {
+    background-color: #FFF0EB;
+}
+
+.color-icono-3 {
+    background-color: #E6F4FB;
+}
+
+.color-icono-4 {
+    background-color: #F3EEF9;
+}
+
+.enfasis-link-1 {
+    color: #0D6E6E;
+}
+
+.enfasis-link-2 {
+    color: #FF6B35;
+}
+
+.enfasis-link-3 {
+    color: #1A8FBF;
+}
+
+.enfasis-link-4 {
+    color: #5C3D8F;
 }
