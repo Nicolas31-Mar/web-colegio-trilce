@@ -258,14 +258,21 @@ footer p {
     justify-content: space-evenly;
     text-align: center;
     background-color: #F7F7F7;
-    height: 340px;
+    margin: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.servicios-texto {
+    margin: 16px 24px;
 }
 
 .servicios-contenedor {
     display: flex;
-    justify-content: space-evenly;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 16px;
     margin-top: 16px;
+    justify-content: center;
 }
 
 .card {
