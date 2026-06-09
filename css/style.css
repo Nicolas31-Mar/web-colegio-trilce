@@ -183,6 +183,17 @@ footer p {
     padding: 8px;
 }
 
+.btn-hero-matriculate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6B35;
+    border-radius: 8px;
+    height: 48px;
+    width: 200px;
+    padding: 8px;
+}
+
 .btn-hero-conoce-mas {
     display: flex;
     justify-content: center;
