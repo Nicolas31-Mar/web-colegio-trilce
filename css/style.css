@@ -68,7 +68,7 @@ nav>ul {
 }
 
 .boton-matricula {
-    display: flex;    
+    display: flex;
 }
 
 .boton-matricula a {
@@ -354,4 +354,251 @@ footer p {
 
 .enfasis-link-4 {
     color: #5C3D8F;
+}
+
+/* Nosotros */
+
+.nosotros-fondo {
+    background-image: linear-gradient(to right, #0D6E6E, #1565C0);
+    border-bottom: 6px solid #FF6B35;
+}
+
+.nosotros-info {
+    display: flex;
+    position: relative;
+    left: 50px;
+    flex-direction: column;
+    height: 200px;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 560px;
+}
+
+.nosotros-info h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.nosotros-info p {
+    color: rgba(255, 255, 255, 0.808);
+    font-size: .8em;
+}
+
+.nosotros-historia {
+    display: flex;
+    padding: 2.5em;
+    background-color: #fff;
+    gap: 2.5em;
+    justify-content: space-around;
+}
+
+.historia-linea {
+    width: 50px;
+    border-top: 4px solid #FF6B35;
+}
+
+.nosotros-imagen {
+    flex: 1;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.historia {
+    flex: 1.2;
+
+}
+
+.historia h2 {
+    font-size: 1.5em;
+}
+
+.historia p {
+    display: inline-block;
+    max-width: 640px;
+    font-size: .9em;
+    margin-bottom: 2em;
+}
+
+.nosotros-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2.5em;
+    gap: 2.5em;
+    align-self: center;
+    width: 80%;
+}
+
+.nosotros-section-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros-linea {
+    width: 75px;
+    border-top: 4px solid #0D4F4F;
+    margin-top: .2em;
+    align-self: center;
+}
+
+.nosotros-contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4em;
+}
+
+.nosotros-contenedor-card {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: start;
+    gap: .8em;
+}
+
+.nosotros-contenedor-card .icono {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #9e9e9e2f;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.nosotros-contenedor-card p {
+    font-size: .8em;
+}
+
+.valores {
+    align-self: first baseline;
+}
+
+.contenedor-valores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.0em;
+}
+
+.minicard {
+    display: flex;
+    background-color: #fff;
+    height: 80px;
+    flex: 1;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.minicard-text {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    text-align: start;
+}
+
+.minicard-text p {
+    display: inline-block;
+    font-size: .8em;
+}
+
+.minicard span {
+    width: 64px;
+    align-self: center;
+    font-size: 1.8em;
+}
+
+.color-sombra-1 {
+    box-shadow: -4px 0px 1px #0D6E6E;
+}
+
+.color-sombra-2 {
+    box-shadow: -4px 0px 1px #FF6B35;
+}
+
+.color-sombra-3 {
+    box-shadow: -4px 0px 1px #1A8FBF;
+}
+
+.color-sombra-4 {
+    box-shadow: -4px 0px 1px #5C3D8F;
+}
+
+.nosotros-final-section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5em 4em;
+}
+
+.nosotros-final-titulo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.2em;
+}
+
+.nosotros-final-linea {
+    width: 75px;
+    border-top: 4px solid #FF6B35;
+    margin-top: .2em;
+    align-self: center;
+}
+
+.nosotros-final-titulo p {
+    margin-top: .6em;
+    color: #666666af;
+    font-weight: 650;
+}
+
+.contenedor-docente {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-self: center;
+    width: 80%;
+}
+
+.docente-card {
+    height: 220px;
+    width: 280px;
+    border: 1px solid #E8E8E8;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.docente-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    font-size: 2em;
+}
+
+.docente-card>div {
+    padding-top: 8px;
+}
+
+.docente-card h3 {
+    font-size: 0.9em;
+}
+
+.docente-card h4 {
+    font-size: 0.8em;
+}
+
+.docente-card p {
+    font-size: 0.78em;
+    color: #666666;
 }
