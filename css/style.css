@@ -756,9 +756,8 @@ button{
     flex-direction: column;
 }
 
-/* ==========================================================================
-   Sección: Hero de Noticias
-   ========================================================================== */
+
+
 .noticias-hero {
     background-image: linear-gradient(to right, #0D6E6E, #1565C0);
     display: flex;
@@ -784,9 +783,7 @@ button{
     margin: 0;
 }
 
-/* ==========================================================================
-   Estructura: Contenedor y Grid de Tarjetas
-   ========================================================================== */
+
 .seccion-contenedor {
     max-width: 1200px;
     margin: 0 auto 40px auto;
@@ -816,7 +813,7 @@ button{
     overflow: hidden;
     width: 350px;
     display: flex;
-    flex-direction: column; /* Permite que la fecha se mueva al fondo */
+    flex-direction: column; 
 }
 
 .imagen-placeholder {
@@ -824,18 +821,16 @@ button{
     width: 100%;
 }
 
-/* ==========================================================================
-   Componente: Tarjeta de Contenido (Unificado)
-   ========================================================================== */
+
 .tarjeta-contenido {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    flex-grow: 1; /* Hace que la caja de texto ocupe todo el espacio disponible */
+    flex-grow: 1; 
 }
 
-/* El título: Configurado sin negrita de forma limpia */
+
 .tarjeta-contenido h3 {
     font-size: 1.1em;
     font-weight: normal; 
@@ -849,17 +844,15 @@ button{
     line-height: 1.4;
 }
 
-/* La fecha alineada abajo de manera estable */
+
 .fecha {
     font-size: 0.78em;
     color: #999999;
-    margin-top: auto; /* Empuja el elemento al piso de la tarjeta */
+    margin-top: auto; 
     display: block;
 }
 
-/* ==========================================================================
-   Etiquetas (Tags) de Noticias
-   ========================================================================== */
+
 .tarjeta-contenido .etiqueta {
     display: inline-flex;
     justify-content: center;
@@ -889,7 +882,7 @@ button{
     color: #1A8FBF;
 }
 
-/* Marcadores de Fondos */
+
 .bg-verde { background-color: #0D6E6E; }
 .bg-naranja { background-color: #FF6B35; }
 .bg-azul { background-color: #1A8FBF; }
@@ -897,9 +890,7 @@ button{
 .bg-amarillo { background-color: #e5b323; }
 .bg-verde-claro { background-color: #0D4F4F; }
 
-/* ==========================================================================
-   Componentes Secundarios: Galería y Calendario (Sin alteraciones)
-   ========================================================================== */
+
 .galeria-botones {
     display: flex;
     flex-direction: row;
