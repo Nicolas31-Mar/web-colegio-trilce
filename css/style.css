@@ -72,7 +72,7 @@ nav>ul {
 }
 
 .boton-matricula a {
-    text-decoration: dashed;
+    text-decoration: none;
     color: aliceblue;
     font-size: small;
 }
