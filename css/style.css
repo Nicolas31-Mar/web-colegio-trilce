@@ -625,12 +625,22 @@ footer p {
     border-radius: 2px;
 }
 
-.acento-azul{
+.acento-verde{
     content: '';
     display: block;
     width: 40px;
     height: 4px;
     background-color: #0D6E6E;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.acento-azul{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #1A8FBF;
     margin: 5px;
     border-radius: 2px;
 }
@@ -755,6 +765,85 @@ button{
     display: flex;
     flex-direction: column;
 }
+
+/* Ubicación */
+
+#seccion-ubicacion {
+    padding: 40px;
+    background-color: #F7F7F7;
+}
+
+.seccion-ubicacion h2 {
+    font-size: 1.5em;
+    color: #222222;
+}
+
+.contenedor-mapa {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #35CFCB;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #DDF9F7;
+}
+
+.mapa-ubicacion {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Pregungtas frecuentes */
+
+.seccion-preguntas {
+    padding: 40px;
+    background-color: #F7F7F7;
+}
+
+.contenedor-preguntas {
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+.contenedor-preguntas h2 {
+    font-size: 1.5em;
+    color: #222222;
+}
+
+.texto-preguntas {
+    font-size: 0.8em;
+    color: #666666;
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
+
+.pregunta-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 18px 0;
+    border-top: 1px solid #DDDDDD;
+}
+
+.pregunta-texto h3 {
+    font-size: 0.9em;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.pregunta-texto p {
+    font-size: 0.8em;
+    color: #666666;
+}
+
+.numero-pregunta {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0D6E6E;
+    opacity: 0.15;
+}
+
 
 /* Noticias*/
 
