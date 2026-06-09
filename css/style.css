@@ -365,3 +365,34 @@ footer p {
     margin: 5px;
     border-radius: 2px;
 }
+
+/* FORMULARIO*/
+
+.form-fila {
+    display: flex;
+    gap: 16px;
+}
+
+.form-fila input {
+    flex: 1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input,
+select,
+textarea{
+    padding: 12px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+textarea{
+    min-height: 120px;
+    resize: none;
+}   
