@@ -756,11 +756,14 @@ button{
     flex-direction: column;
 }
 
+/* ==========================================================================
+   Sección: Hero de Noticias
+   ========================================================================== */
 .noticias-hero {
     background-image: linear-gradient(to right, #0D6E6E, #1565C0);
     display: flex;
     flex-direction: column;
-    height: 180px;            
+    height: 200px;            
     justify-content: center;
     align-items: flex-start;
     padding: 0 45px;
@@ -781,8 +784,9 @@ button{
     margin: 0;
 }
 
-
-
+/* ==========================================================================
+   Estructura: Contenedor y Grid de Tarjetas
+   ========================================================================== */
 .seccion-contenedor {
     max-width: 1200px;
     margin: 0 auto 40px auto;
@@ -798,7 +802,6 @@ button{
     padding-bottom: 4px;
 }
 
-
 .noticias-grid {
     display: flex;
     flex-wrap: wrap;
@@ -806,56 +809,69 @@ button{
     justify-content: space-between;
 }
 
-
 .tarjeta-noticia {
     background-color: #FFFFFF;
     border: 1px solid #E8E8E8;
     border-radius: 16px;
     overflow: hidden;
     width: 350px;
+    display: flex;
+    flex-direction: column; /* Permite que la fecha se mueva al fondo */
 }
 
 .imagen-placeholder {
-    height: 160px;
+    height: 120px;
     width: 100%;
 }
 
+/* ==========================================================================
+   Componente: Tarjeta de Contenido (Unificado)
+   ========================================================================== */
 .tarjeta-contenido {
-    padding: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1; /* Hace que la caja de texto ocupe todo el espacio disponible */
 }
 
+/* El título: Configurado sin negrita de forma limpia */
 .tarjeta-contenido h3 {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: normal; 
     color: #000000;
     line-height: 1.3;
-    margin-bottom: 12px;
 }
 
 .tarjeta-contenido p {
     font-size: 0.85em;
     color: #666666;
     line-height: 1.4;
-    margin-bottom: 24px; 
 }
 
-.tarjeta-contenido .fecha {
-    font-size: 0.8em;
-    color: #666666;
+/* La fecha alineada abajo de manera estable */
+.fecha {
+    font-size: 0.78em;
+    color: #999999;
+    margin-top: auto; /* Empuja el elemento al piso de la tarjeta */
     display: block;
 }
 
-
-
+/* ==========================================================================
+   Etiquetas (Tags) de Noticias
+   ========================================================================== */
 .tarjeta-contenido .etiqueta {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 8px;       
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
     font-size: 0.75em;
     font-weight: 600;
-    margin-bottom: 12px;      
-    background-color: #f0f0f0; 
-    color: #333333;
+    width: fit-content;
+    padding: 4px 12px;
+    color: #666666;
 }
 
 .tarjeta-contenido .etiqueta.tag-logros {
@@ -865,7 +881,7 @@ button{
 
 .tarjeta-contenido .etiqueta.tag-eventos {
     background-color: #FFF0EB;
-    color: #FF6B35 ;
+    color: #FF6B35;
 }
 
 .tarjeta-contenido .etiqueta.tag-academia {
@@ -873,6 +889,7 @@ button{
     color: #1A8FBF;
 }
 
+/* Marcadores de Fondos */
 .bg-verde { background-color: #0D6E6E; }
 .bg-naranja { background-color: #FF6B35; }
 .bg-azul { background-color: #1A8FBF; }
@@ -880,45 +897,9 @@ button{
 .bg-amarillo { background-color: #e5b323; }
 .bg-verde-claro { background-color: #0D4F4F; }
 
-
-.tarjeta-contenido {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.etiqueta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid #E8E8E8;
-    border-radius: 8px;
-    font-size: small;
-    width: fit-content;
-    padding: 4px 12px;
-    color: #666666;
-}
-
-.tarjeta-contenido h3 {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #000000;
-}
-
-.tarjeta-contenido p {
-    font-size: 0.85em;
-    color: #666666;
-    line-height: 1.4;
-}
-
-.fecha {
-    font-size: 0.78em;
-    color: #999999;
-    margin-top: auto;
-}
-
+/* ==========================================================================
+   Componentes Secundarios: Galería y Calendario (Sin alteraciones)
+   ========================================================================== */
 .galeria-botones {
     display: flex;
     flex-direction: row;
@@ -956,7 +937,6 @@ button{
     width: 100%;
 }
 
-
 .evento-calendario {
     display: flex;
     flex-direction: row; 
@@ -964,7 +944,6 @@ button{
     gap: 12px;
     width: 265px; 
 }
-
 
 .fecha-cuadro {
     display: flex;
@@ -990,7 +969,6 @@ button{
     text-transform: uppercase;
 }
 
-
 .evento-info {
     display: flex;
     flex-direction: column;
@@ -1010,7 +988,6 @@ button{
     line-height: 1.3;
 }
 
-
 .tipo-tag {
     display: flex;
     justify-content: center;
@@ -1023,24 +1000,7 @@ button{
     margin-top: 4px;
 }
 
-
-.tag-academico { 
-    background-color: #E6F4FB; 
-    color: #1A8FBF; 
-}
-
-.tag-feriado { 
-    background-color: #FFF0EB; 
-    color: #FF6B35; 
-}
-
-.tag-clases {
-    background-color: #E8F8F7;
-    color: #0D6E6E;
-}
-
-.tag-evento {
-    background-color: #F3EEF9;
-    color: #5C3D8F;
-}
-
+.tag-academico { background-color: #E6F4FB; color: #1A8FBF; }
+.tag-feriado { background-color: #FFF0EB; color: #FF6B35; }
+.tag-clases { background-color: #E8F8F7; color: #0D6E6E; }
+.tag-evento { background-color: #F3EEF9; color: #5C3D8F; }
