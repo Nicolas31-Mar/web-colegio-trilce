@@ -72,7 +72,7 @@ nav>ul {
 }
 
 .boton-matricula a {
-    text-decoration: dashed;
+    text-decoration: none;
     color: aliceblue;
     font-size: small;
 }
@@ -115,7 +115,7 @@ footer p {
 
 /* Contenido */
 #hero {
-    background-image: linear-gradient(to right, #0D6E6E, #1565C0);
+    background-image: linear-gradient(to right, #0D6E6E, #1A8FBF);  
     display: flex;
     height: 350px;
     justify-content: space-between;
@@ -149,7 +149,8 @@ footer p {
 }
 
 .contenido-hero p {
-    color: rgba(255, 255, 255, 0.664);
+    color: #FFFFFF;
+    opacity: 0.8;
     font-size: 1em;
 }
 
@@ -171,14 +172,14 @@ footer p {
 }
 
 
-.btn-hero-matriculate {
+.boton-matricula {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FF6B35;
     border-radius: 8px;
-    height: 48px;
-    width: 200px;
+    height: 30px;
+    width: 86px;
     padding: 8px;
 }
 
