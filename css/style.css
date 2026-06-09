@@ -115,7 +115,7 @@ footer p {
 
 /* Contenido */
 #hero {
-    background-image: linear-gradient(to right, #0D6E6E, #1565C0);
+    background-image: linear-gradient(to right, #0D6E6E, #1A8FBF);  
     display: flex;
     height: 350px;
     justify-content: space-between;
@@ -149,7 +149,8 @@ footer p {
 }
 
 .contenido-hero p {
-    color: rgba(255, 255, 255, 0.664);
+    color: #FFFFFF;
+    opacity: 0.8;
     font-size: 1em;
 }
 
@@ -366,7 +367,48 @@ footer p {
     border-radius: 2px;
 }
 
-/* FORMULARIO*/
+.acento-azul{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #0D6E6E;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+/* Contacto */
+
+#hero-contacto {
+    background-image: linear-gradient(to right, #0D6E6E, #1A8FBF);
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 6px solid #FF6B35;
+}
+
+.contenido-hero-contacto {
+    display: flex;  
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 45px;
+    max-width: 480px;
+}
+
+.contenido-hero-contacto h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.contenido-hero-contacto p {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 1em;
+}
+
+/* Contacto-Formulario */
 
 .form-fila {
     display: flex;
@@ -386,6 +428,7 @@ form{
 input,
 select,
 textarea{
+    width: 100%;
     padding: 12px;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
@@ -395,4 +438,62 @@ textarea{
 textarea{
     min-height: 120px;
     resize: none;
-}   
+}
+
+button{
+    width: fit-content;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #FF6B35;
+    color: white;
+    font-size: .9em;    
+}
+
+#formulario {
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+}
+
+.contacto-formulario {
+    flex: 2;    
+}
+
+.contacto-info{
+    flex: 1;    
+}
+
+/* Contacto-info */
+
+.info-fila{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.logo-info{
+    font-size: 22px;
+}
+
+.contacto-info h3 {
+    font-size: 14px;
+    color: #999999;
+}
+
+.contacto-info h4 {
+    font-size: 15px;
+}
+
+.info-fila p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.info-texto{
+    display: flex;
+    flex-direction: column;
+}
