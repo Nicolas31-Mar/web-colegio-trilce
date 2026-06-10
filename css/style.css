@@ -648,10 +648,13 @@ footer p {
 /* Contacto */
 
 #hero-contacto {
-    background-image: linear-gradient(to right, #0D6E6E, #1A8FBF);
+    background-image:
+        url("../img/colegio_trilce.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
-    height: 200px;
-    justify-content: space-between;
+    height: 300px;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     border-bottom: 6px solid #FF6B35;
