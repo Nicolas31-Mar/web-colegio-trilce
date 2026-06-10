@@ -1087,3 +1087,39 @@ button{
 .tag-feriado { background-color: #FFF0EB; color: #FF6B35; }
 .tag-clases { background-color: #E8F8F7; color: #0D6E6E; }
 .tag-evento { background-color: #F3EEF9; color: #5C3D8F; }
+
+
+/* Oferta educativa */
+
+#hero-oferta-educativa {
+    background-image:
+        url("../img/oferta_educativa.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 6px solid #FF6B35;
+}
+
+.contenido-hero-oferta-educativa {
+    display: flex;  
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 45px;
+    max-width: 480px;
+}
+
+.contenido-hero-oferta-educativa h1{
+    color: #FFFFFF;
+    font-size: 38px;
+}
+
+.contenido-hero-oferta-educativa p{
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 15px;
+    max-width: 400px;
+}
