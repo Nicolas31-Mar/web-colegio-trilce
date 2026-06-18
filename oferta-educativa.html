@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/oferta.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <title>Oferta educativa</title>
   </head>
   <body>
@@ -26,19 +33,36 @@
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
-        <a class="boton-matricula" href="matricula.html">
-            Matricúlate
-          </a>
+        <a class="boton-matricula" href="matricula.html"> Matricúlate </a>
       </nav>
     </header>
     <main>
       <section id="hero-oferta-educativa">
         <div class="contenido-hero-oferta-educativa">
           <h1>Oferta educativa</h1>
-          <p>Conoce nuestros niveles educativos, cursos por grado y horarios. Formamos estudiantes de excelencia desde Primaria hasta Secundaria.</p>
+          <p>
+            Conoce nuestros niveles educativos, cursos por grado y horarios.
+            Formamos estudiantes de excelencia desde Primaria hasta Secundaria.
+          </p>
         </div>
       </section>
+      <div class="container">
+
+        <div class="contenido-oferta">
+          <h2>Nuestros Niveles</h2>
+
+        </div>
+        <table class="table">
+          <thead>
+            <th class="table-success" scope="col">Curso</th>
+            <th class="table-success" scope="col">Horas semanales</th>
+            <th class="table-success" scope="col">Area</th>
+          </thead>
+          <tbody id="tabla"></tbody>
+        </table>
+      </div>
     </main>
+    <script src="js/script.js"></script>
     <footer>
       <div class="logo-footer">
         <img src="img/logo_colegio_trilce_46.svg" alt="logo-footer" />
