@@ -1,3 +1,129 @@
+body {
+    background-color: #FFFFFF !important;
+}
+
+ul {
+    margin-bottom: 0rem !important;
+    padding-left: 0rem !important;
+}
+
 .contenido-oferta {
     margin: 24px;
+}
+
+.seccion-primaria {
+    display: flex;
+    gap: 24px;
+}
+
+.contenido-primaria {
+    flex: 1;
+    padding: 24px 0;
+}
+
+.contenido-primaria p {
+    display: inline-block;
+    font-size: .9em;
+}
+
+.contenido-primaria ul {
+    padding-left: 1rem !important;
+}
+
+.contenido-primaria ul>li {
+    font-size: .9em;
+}
+
+.seccion-primaria img {
+    flex: 1;
+    max-width: 480px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.seccion-tabla {
+    display: flex !important;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    gap: 16px;
+}
+
+.seccion-tabla h2 {
+    align-self: flex-start;
+}
+
+.opcion-tabla {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.opcion-tabla>li>a {
+    padding: 8px 16px;
+    background-color: #fff;
+    font-size: .8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.opcion-tabla>li>a:hover {
+    background-color: #0d6e6e23;
+}
+
+
+.opcion-activa {
+    padding: 8px 16px;
+    background-color: #0D6E6E !important;
+    color: #FFF !important;
+    font-size: .8rem;
+    border-radius: 8px;
+}
+
+
+.tabla-contenedor {
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+.tabla-header {
+    background-color: #0D6E6E !important;
+    color: #FFF !important;
+    font-size: .9em;
+}
+
+.tipo-obligatorio {
+    background-color: #E8F8F7;
+    padding: 4px 16px;
+    border-radius: 8px;
+    color: #0D6E6E;
+    font-size: .8em;
+}
+
+.tipo-taller {
+    background-color: #E6F4FB;
+    padding: 4px 16px;
+    border-radius: 8px;
+    color: #1A8FBF;
+    font-size: .8em;
+}
+
+.tipo-regular {
+    background-color: #FFF0EB;
+    padding: 4px 16px;
+    border-radius: 8px;
+    color: #FF6B35;
+    font-size: .8em;
+}
+
+
+.tabla-font-size {
+    font-size: .9em;
+}
+
+@media only screen and (max-width: 1294px) {
+    .seccion-primaria {
+        flex-direction: column;
+    }
 }
