@@ -179,6 +179,7 @@ footer p {
     height: 48px;
     width: 200px;
     padding: 8px;
+    transition: background-color .3s;
 }
 
 .btn-hero-matriculate:hover {
@@ -195,6 +196,12 @@ footer p {
     height: 48px;
     width: 200px;
     padding: 8px;
+    transition: background-color .3s;
+}
+
+.btn-hero-conoce-mas:hover {
+    background-color: rgba(63, 56, 56, 0.171);
+    
 }
 
 
