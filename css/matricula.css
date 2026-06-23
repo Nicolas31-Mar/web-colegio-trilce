@@ -72,8 +72,10 @@
     text-align: center;
     color: white;
     background-color: #FF6B35;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .boton-registrate:hover {
@@ -121,6 +123,28 @@ footer p {
 
 .logo-footer img {
     width: 210px;
+}
+
+/* Estilos para inputs, selects y textareas */
+.campo-grupo input[type="text"],
+.campo-grupo input[type="email"],
+.campo-grupo select,
+.campo-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Efecto al hacer clic en un input */
+.campo-grupo input:focus,
+.campo-grupo select:focus,
+.campo-grupo textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
 @media only screen and (max-width: 1294px) {
