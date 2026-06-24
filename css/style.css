@@ -40,7 +40,9 @@ header nav {
     right: 20px;
     gap: 20px;
     list-style: none;
-    align-items: center;
+    align-items: center;    
+    margin-bottom: 0rem !important;
+    padding-left: 0rem !important;
 }
 
 .logo-header img {
@@ -94,6 +96,7 @@ footer p {
     color: aliceblue;
     padding-right: 10px;
     font-size: 0.8em;
+    margin-bottom: 0;
 }
 
 /* Contenido */

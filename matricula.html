@@ -38,7 +38,7 @@
           </p>
           <img class="imagen-flotante" src="img/BG 1.png" alt="" />
         </div>
-        <form id="formulario-matricula" novalidate>
+        <form id="formulario-matricula" class="needs-validation" novalidate>
           <div class="tarjeta">
             <div class="row">
               <h2>Matrícula 2026</h2>
@@ -51,8 +51,8 @@
                     placeholder="Nombre"
                     name=""
                     id="nombre"
+                    class="form-control"
                     aria-describedby="helpId"
-                    placeholder=""
                     required
                   />
                 </div>
@@ -63,8 +63,9 @@
                   placeholder="DNI"
                   name=""
                   id="documento"
+                  class="form-control"
                   aria-describedby="helpId"
-                  placeholder=""
+                  required
                 />
               </div>
             </div>
@@ -76,31 +77,40 @@
                     placeholder="Correo electrónico"
                     name=""
                     id="email"
+                    class="form-control"
                     aria-describedby="helpId"
-                    placeholder=""
+                    autocomplete="email"
+                    required
                   />
                 </div>
               </div>
               <div class="col campo-grupo">
                 <input
-                  type="text"
+                  type="tel"
                   placeholder="Teléfono"
                   name=""
-                  id=""
+                  id="telefono"
+                  class="form-control"
                   aria-describedby="helpId"
-                  placeholder=""
+                  required
                 />
               </div>
             </div>
             <div class="row">
               <div class="col campo-grupo">
                 <div class="mb-3">
-                  <select id="sede" aria-label="Default select example">
-                    <option selected>Sede de interés</option>
+                  <select
+                    id="sede"
+                    class="form-select"
+                    aria-label="Default select example"
+                    required
+                  >
+                    <option value="" selected disabled>Sede de interés</option>
                     <option value="1">Breña</option>
                     <option value="2">Callao</option>
                     <option value="3">Chorrillos</option>
                   </select>
+                  <div class="invalid-feedback">Selecciona una sede.</div>
                 </div>
               </div>
               <div class="col campo-grupo">
@@ -109,8 +119,9 @@
                   placeholder="Grado de interés"
                   name=""
                   id="grado"
+                  class="form-control"
                   aria-describedby="helpId"
-                  placeholder=""
+                  required
                 />
               </div>
             </div>

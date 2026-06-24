@@ -1,6 +1,7 @@
 let nombre = document.getElementById("nombre");
 let documento = document.getElementById("documento");
 let email = document.getElementById("email");
+let telefono = document.getElementById("telefono");
 let grado = document.getElementById("grado");
 let sede = document.getElementById("sede");
 
@@ -11,15 +12,22 @@ const myModal = document.getElementById("modal");
 
 formulario.addEventListener("submit", (evento) => {
   evento.preventDefault();
+  formulario.classList.add("was-validated");
 
   if (!formulario.checkValidity()) {
+    evento.stopPropagation();
     return;
   }
+
+  formulario.reset();
+  clearModal();
+  formulario.classList.remove("was-validated");
 });
 
 let n = "";
 let d = "";
 let e = "";
+let t = "";
 let g = "";
 let s = "";
 
@@ -28,6 +36,7 @@ function validarCampos() {
     isNotEmptyString(n) &&
     isNotEmptyString(d) &&
     isNotEmptyString(e) &&
+    isNotEmptyString(t) &&
     isNotEmptyString(g) &&
     isNotEmptyString(s)
   );
@@ -43,6 +52,10 @@ documento.addEventListener("change", (event) => {
 
 email.addEventListener("change", (event) => {
   e = event.target.value;
+});
+
+telefono.addEventListener("change", (event) => {
+  t = event.target.value;
 });
 
 grado.addEventListener("change", (event) => {
@@ -68,4 +81,9 @@ formulario.addEventListener("change", (event) => {
 
 function isNotEmptyString(value) {
   return typeof value !== "string" || value.trim().length !== 0;
+}
+
+function clearModal() {
+  matricuale.removeAttribute("data-bs-toggle");
+  matricuale.removeAttribute("data-bs-target");
 }

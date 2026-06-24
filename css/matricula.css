@@ -119,6 +119,7 @@ footer p {
     color: aliceblue;
     padding-right: 10px;
     font-size: 0.8em;
+    margin-bottom: 0;
 }
 
 .logo-footer img {
@@ -128,6 +129,7 @@ footer p {
 /* Estilos para inputs, selects y textareas */
 .campo-grupo input[type="text"],
 .campo-grupo input[type="email"],
+.campo-grupo input[type="tel"],
 .campo-grupo select,
 .campo-grupo textarea {
     width: 100%;
@@ -142,9 +144,9 @@ footer p {
 .campo-grupo input:focus,
 .campo-grupo select:focus,
 .campo-grupo textarea:focus {
-    border-color: #007bff;
+    border-color: #127979;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 5px #0D4F4F;
 }
 
 @media only screen and (max-width: 1294px) {

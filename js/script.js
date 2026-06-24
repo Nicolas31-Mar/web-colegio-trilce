@@ -126,15 +126,151 @@ const secundaria2 = [
   },
 ];
 
-//Agregar mas curricula escolar secundaria 3, 4 y 5
+const secundaria3 = [
+  {
+    curso: "Matemática",
+    hora: "8 horas",
+    area: "Ciencias",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Comunicación",
+    hora: "5 horas",
+    area: "Letras",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Ciencias Naturales",
+    hora: "5 horas",
+    area: "Ciencias",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Historia y Geografia",
+    hora: "5 horas",
+    area: "Letras",
+    tipo: "Obligatorio",
+  },
+  { curso: "Inglés", hora: "4 horas", area: "Idiomas", tipo: "Obligatorio" },
+  {
+    curso: "Educación Fisica",
+    hora: "4 horas",
+    area: "Deportes",
+    tipo: "Regular",
+  },
+  {
+    curso: "Arte y Cultura",
+    hora: "3 horas",
+    area: "Arte",
+    tipo: "Regular",
+  },
+  {
+    curso: "Computación",
+    hora: "4 horas",
+    area: "Tecnología",
+    tipo: "Taller",
+  },
+];
+
+const secundaria4 = [
+  {
+    curso: "Matemática",
+    hora: "8 horas",
+    area: "Ciencias",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Comunicación",
+    hora: "6 horas",
+    area: "Letras",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Ciencias Naturales",
+    hora: "6 horas",
+    area: "Ciencias",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Historia y Geografia",
+    hora: "5 horas",
+    area: "Letras",
+    tipo: "Obligatorio",
+  },
+  { curso: "Inglés", hora: "4 horas", area: "Idiomas", tipo: "Obligatorio" },
+  {
+    curso: "Educación Fisica",
+    hora: "4 horas",
+    area: "Deportes",
+    tipo: "Regular",
+  },
+  {
+    curso: "Arte y Cultura",
+    hora: "3 horas",
+    area: "Arte",
+    tipo: "Regular",
+  },
+  {
+    curso: "Computación",
+    hora: "4 horas",
+    area: "Tecnología",
+    tipo: "Taller",
+  },
+];
+
+const secundaria5 = [
+  {
+    curso: "Matemática",
+    hora: "8 horas",
+    area: "Ciencias",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Comunicación",
+    hora: "6 horas",
+    area: "Letras",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Ciencias Naturales",
+    hora: "5 horas",
+    area: "Ciencias",
+    tipo: "Obligatorio",
+  },
+  {
+    curso: "Historia y Geografia",
+    hora: "3 horas",
+    area: "Letras",
+    tipo: "Obligatorio",
+  },
+  { curso: "Inglés", hora: "4 horas", area: "Idiomas", tipo: "Obligatorio" },
+  {
+    curso: "Educación Fisica",
+    hora: "4 horas",
+    area: "Deportes",
+    tipo: "Regular",
+  },
+  {
+    curso: "Arte y Cultura",
+    hora: "3 horas",
+    area: "Arte",
+    tipo: "Regular",
+  },
+  {
+    curso: "Computación",
+    hora: "4 horas",
+    area: "Tecnología",
+    tipo: "Taller",
+  },
+];
 
 const lista = [
   { grado: "Primaria", curricula: primaria },
   { grado: "1° Secundaria", curricula: secundaria1 },
   { grado: "2° Secundaria", curricula: secundaria2 },
-  { grado: "3° Secundaria", curricula: null },
-  { grado: "4° Secundaria", curricula: null },
-  { grado: "5° Secundaria", curricula: null },
+  { grado: "3° Secundaria", curricula: secundaria3 },
+  { grado: "4° Secundaria", curricula: secundaria4 },
+  { grado: "5° Secundaria", curricula: secundaria5 },
 ];
 
 let agregarDatos = (array) => {
