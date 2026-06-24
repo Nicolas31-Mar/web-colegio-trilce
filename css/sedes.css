@@ -152,7 +152,7 @@ footer p {
 .dato-unico p {
     font-size: 0.9rem;
     margin: 5px 0 0 0;
-    color: rgba(255, 255, 255, 0.8); 
+    color: #ffffff; 
 }
 
 
@@ -275,11 +275,8 @@ footer p {
     width: 36px;                 
     height: 36px;                
     background-color: #F5F5F7;    
-    border-radius: 50%;         
-    
-   
+    border-radius: 50%;       
     text-decoration: none;       
-    
     font-size: 1.1rem;           
     
 }
@@ -396,5 +393,4 @@ footer p {
     background-color: #0D6E6E; 
     color: #FFFFFF;
     border-color: #0D6E6E;
-    box-shadow: 0 4px 10px rgba(13, 110, 110, 0.2);
-}
+    }
