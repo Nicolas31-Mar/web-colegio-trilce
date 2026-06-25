@@ -7,34 +7,50 @@ ul {
     padding-left: 0rem !important;
 }
 
+h2{
+    margin-bottom: 4px !important;
+}
+
+.linea-niveles {
+    width: 80px;
+    border-top: 6px solid #0D6E6E;
+}
+
+.linea-grado {
+    width: 80px;
+    border-top: 6px solid #FF6B35;
+}
+
 .contenido-oferta {
-    margin: 24px;
+    margin: 24px 0;
 }
 
-.seccion-primaria {
+.seccion-educativa {
     display: flex;
-    gap: 24px;
+    gap: 32px;
+    padding: 32px 0;
 }
 
-.contenido-primaria {
+.contenido-educativa {
     flex: 1;
     padding: 24px 0;
 }
 
-.contenido-primaria p {
+.contenido-educativa p {
     display: inline-block;
     font-size: .9em;
+    text-align: justify;
 }
 
-.contenido-primaria ul {
+.contenido-educativa ul {
     padding-left: 1rem !important;
 }
 
-.contenido-primaria ul>li {
+.contenido-educativa ul>li {
     font-size: .9em;
 }
 
-.seccion-primaria img {
+.seccion-educativa img {
     flex: 1;
     max-width: 480px;
     height: 320px;
@@ -47,6 +63,7 @@ ul {
     flex-direction: column;
     background-color: #F7F7F7;
     gap: 16px;
+    margin: 24px 0;
 }
 
 .seccion-tabla h2 {
@@ -121,6 +138,114 @@ ul {
 .tabla-font-size {
     font-size: .9em;
 }
+
+.seccion-horario {
+    padding: 32px 0;
+}
+
+.linea-horario {
+    width: 80px;
+    border-top: 6px solid #1A8FBF;
+}
+
+.grupo-horario {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 1em 0;
+}
+
+.borde-horario-1 {
+    border-left: 4px solid #0D6E6E;
+}
+
+.borde-horario-2 {
+    border-left: 4px solid #FF6B35;
+}
+
+.borde-horario-3 {
+    border-left: 4px solid #1A8FBF;
+}
+
+.tarjeta-horario {
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 0 8px 8px 0;
+}
+
+.tarjeta-horario p {
+    margin-bottom: 0;
+    font-size: small;
+}
+
+.linea-matricula {
+    width: 80px;
+    border-top: 6px solid #5C3D8F;
+}
+
+.seccion-proceso-matricula {
+    padding-bottom: 6em;
+}
+
+.tarjeta-matricula {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-top: 34px;
+}
+
+.proceso-numero {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.contenido-tarjeta-matricula {
+    font-size: .8em;
+}
+
+.contenido-tarjeta-matricula p {
+    margin-bottom: 0;
+}
+
+.contenido-tarjeta-matricula p:nth-child(3) {
+    padding-top: 8px;
+    color: #0D6E6E;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.color-numero-1 {
+    background-color: #0D6E6E;
+    color: #fff;
+}
+
+.color-numero-2 {
+    background-color: #FF6B35;
+    color: #fff;
+}
+
+.color-numero-3 {
+    background-color: #1A8FBF;
+    color: #fff;
+}
+
+.color-numero-4 {
+    background-color: #5C3D8F;
+    color: #fff;
+}
+
+.color-numero-5 {
+    background-color: #F4A623;
+    color: #fff;
+}
+
 
 @media only screen and (max-width: 1294px) {
     .seccion-primaria {
