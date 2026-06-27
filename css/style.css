@@ -29,17 +29,14 @@ header nav {
     gap: 20px;
 }
 
-.list-nav>li {
+.list-nav>li>a {
     padding: 8px;
     transition: background-position 0.5s ease, transform 0.3s ease;
-}
-
-.list-nav>li>a {
     color: aliceblue;
     text-decoration: none;
 }
 
-.list-nav>li:hover {
+.list-nav>li>a:hover {
     background: linear-gradient(60deg, #086e96, #453adb);
     transform: scale(1.05);
     background-size: 200% 200%;
