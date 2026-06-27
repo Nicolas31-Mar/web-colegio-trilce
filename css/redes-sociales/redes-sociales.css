@@ -1,0 +1,57 @@
+.barra-redes-sociales {
+    position: fixed;
+    right: 16px;
+    top: 35%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.enlace-red-social {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #0D6E6E;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    font-size: 1.15em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enlace-red-social:hover {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    transform: translateX(-6px);
+}
+
+.barra-redes-sociales .fa-brands,
+.barra-redes-sociales .fa-brands::before {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 768px) {
+    .barra-redes-sociales {
+        top: auto;
+        right: 12px;
+        bottom: 12px;
+        left: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .enlace-red-social {
+        width: 42px;
+        height: 42px;
+    }
+
+    .enlace-red-social:hover {
+        transform: translateY(-4px);
+    }
+}

@@ -1045,9 +1045,17 @@ button{
     flex-direction: column; 
 }
 
-.imagen-placeholder {
-    height: 120px;
+.imagen-placeholder,
+.imagen-noticia {
+    height: 150px;
     width: 100%;
+}
+
+.imagen-noticia img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
