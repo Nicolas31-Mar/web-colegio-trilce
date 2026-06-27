@@ -21,6 +21,11 @@ h2{
     border-top: 6px solid #FF6B35;
 }
 
+.color-tab-link {
+    color:#0D6E6E !important;
+    font-weight: 700 !important;   
+}
+
 .contenido-oferta {
     margin: 24px 0;
 }
@@ -248,7 +253,13 @@ h2{
 
 
 @media only screen and (max-width: 1294px) {
-    .seccion-primaria {
+    .seccion-educativa {
         flex-direction: column;
+        align-items: center;
     }
+
+    .contenido-educativa {
+        width: 75%;
+    }
+
 }
